@@ -1,80 +1,128 @@
 <!DOCTYPE html>
-<html lang="eng"
-<head>
-    <title> Google </title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        li {
-            display: inline;
-            float: left;
-            padding: 15px;
-            font-size: 15px;
-        }
-        .nav-bar{
-            text-decoration: none;
-            color: black;
-        }
-        .block {
-            background-image: url(//ssl.gstatic.com/gb/images/i1_1967ca6a.png);
-            background-size: 528px 68px;
-            background-position: -132px -38px;
-            display: inline-block;
-            opacity: 75%;
-            height: 30px;
-            width: 30px;
+<html lang="eng" <head>
+<title> Google </title>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
 
-        }
-        .sign-in-button {
+    #ulb {
+        background-color: rgb(192, 192, 192);
+        text-decoration: none;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 
-            background: -webkit-linear-gradient(top,#4387fd,#4683ea);
-            border: 1px solid #4285f4;
-            font-weight: bold;
-            outline: none;
-            display: inline-block;
-            line-height: 28px;
-            padding: 0 12px;
-            border-radius: 2px;
-            color: #fff;
-            font-family: arial, sans-serif;
-            font-size: 13px;
-            text-decoration: none;
-        }
-        .search-box{
-            display: block;
-            margin: auto;
-        }
-        .google-logo{
-            background-color: none;
-            padding-top: 7%;
-            padding-bottom: 2%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;           
-        }
-    </style>
+    li {
+        display: inline;
+        float: left;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .nav-bar {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav-bar-bottom {
+        text-decoration: none;
+        color: black;
+        float: left;
+        ;
+    }
+
+    .block {
+        background-image: url(//ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+        background-size: 528px 68px;
+        background-position: -132px -38px;
+        display: inline-block;
+        opacity: 75%;
+        height: 30px;
+        width: 30px;
+
+    }
+
+    .sign-in-button {
+
+        background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        outline: none;
+        display: inline-block;
+        line-height: 28px;
+        padding: 0 12px;
+        border-radius: 2px;
+        color: #fff;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    .search-box {
+        display: block;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 17px;
+        width: 30%;
+        font-size: 22px;
+    }
+
+    .google-logo {
+        background-color: none;
+        padding-top: 7%;
+        padding-bottom: 2%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        font-family: arial, sans-serif;
+    }
+</style>
 
 </head>
 
 <body>
     <ul>
-        <li><a class="nav-bar" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
-        <li><a class="nav-bar" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-        <li style="float:right"><a class="sign-in-button" href="https://web.archive.org/web/20191130031533/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign in</a></li>
-        <li style="float:right"><a class="block" href="https://www.google.com/intl/en/about/products?tab=wh" title="Google apps" role="button"></a></li>
+        <li><a class="nav-bar"
+                href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+        </li>
+        <li><a class="nav-bar"
+                href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+        </li>
+        <li style="float:right"><a class="sign-in-button nav-bar"
+                href="https://web.archive.org/web/20191130031533/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign
+                in</a></li>
+        <li style="float:right"><a class="block nav-bar" href="https://www.google.com/intl/en/about/products?tab=wh"
+                title="Google apps" role="button"></a></li>
         <li style="float:right"><a class="nav-bar" href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li>
-        <li style="float:right"><a class="nav-bar" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a></li>
+        <li style="float:right"><a class="nav-bar" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a>
+        </li>
 
     </ul>
     <div>
-        <img class="google-logo" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="a colorful Google Logo">
+        <img class="google-logo" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
+            alt="a colorful Google Logo">
     </div>
     <div>
         <input class="search-box" type="text">
     </div>
+    <ul id=ulb>
+        <li><a class="nav-bar"
+                href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+        </li>
+        <li><a class="nav-bar" href="">Business</a></li>
+        <li><a class="nav-bar" href="">How Search works</a></li>
+        <li style="float:right"><a class="nav-bar" href="">Privacy</a></li>
+        <li style="float:right"><a class="nav-bar" href="">Terms</a></li>
+        <li style="float:right"><a class="nav-bar" href="">Settings</a></li>
+    </ul>
 </body>
+
 </html>
